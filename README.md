@@ -1,4 +1,13 @@
-# Express + TypeScript スターター
+# Express テンプレート
+
+## 概要
+
+Express + TypeScript ベースの開発テンプレートになります
+
+主な構成
+
+- サーバー側　 → 　 Express + Sequelize(MySQL)
+- フロント側　 → 　 jQuery + SCSS + Webpack
 
 ## 使い方
 
@@ -14,17 +23,17 @@ node v8.11.3
 npm v5.6.0
 ```
 
-## 構成
+## ディレクトリ構成
 
 ```
 expres-ts-start
+├─ .vscode
+|  └─ setting.json         // Visual Studio Code設定ファイル
 ├─ __tests__               // UT用ディレクトリ
 |  ├─ client               // フロント側
 |  └─ server               // サーバー側
-├─ .vscode
-|  └─ setting.json         // Visual Studio Code設定ファイル
-├─ public                  // 開発環境で出力されるディレクトリ
 ├─ node_modules            // パッケージ群
+├─ public                  // 開発環境で出力されるディレクトリ
 ├─ src
 |  ├─ client               // フロント側ファイル
 |  |  ├─ scripts           // TypeScriptファイル
@@ -45,10 +54,11 @@ expres-ts-start
 ├─ .eslintrc               // eslint設定ファイル
 ├─ .gitignore              // git対象外設定ファイル
 ├─ .stylelintrc            // stylelint設定ファイル
-├─ package.json            // npm設定ファイル
+├─ package.json            // パッケージ設定ファイル
+├─ package-lock.json       // パッケージバージョン情報ファイル
+├─ README.md               // README
 ├─ tsconfig.json           // TypeScript設定ファイル
-├─ webpack.config.js       // Webpack設定ファイル（デプロイ用）
-└─ yarn.lock               // Webpack設定ファイル（デプロイ用）
+└─ webpack.config.js       // Webpack設定ファイル
 ```
 
 ## インストールパッケージ
