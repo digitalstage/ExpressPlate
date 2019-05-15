@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   // models.transaction(async transaction => {
-  //   const res = await models.query('SELECT * FROM PostCategories', {
+  //   const res = await models.query('SELECT * FROM table', {
   //     transaction: transaction
   //   });
   //   console.log('query result : ', res);
