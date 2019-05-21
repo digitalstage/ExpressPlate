@@ -19,8 +19,8 @@ npm-scripts に関しては[wiki](https://github.com/digitalstage/ExpressPlate/w
 ## 動作環境
 
 ```
-node v8.11.3
-npm v5.6.0
+node v10.15.3
+npm v6.4.1
 ```
 
 ※基本的に node v8 以降であれば動くかと思いますが v12 は怪しいです
