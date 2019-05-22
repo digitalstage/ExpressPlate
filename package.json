@@ -1,7 +1,8 @@
 {
-  "name": "express-ts-start",
+  "name": "ExpressPlate",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "digitalstage（http://digitalstage.jp/）",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev src/server/app.ts",
