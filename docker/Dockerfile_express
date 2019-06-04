@@ -1,0 +1,25 @@
+FROM node:10
+
+# 基本
+ARG base_timezone="Asia/Tokyo"
+ARG DEBIAN_FRONTEND=noninteractive
+
+# 基本 ###################################
+RUN apt-get update
+RUN apt-get -y install apt-utils --no-install-recommends
+
+# locale設定
+RUN apt-get -y install locales
+RUN locale-gen ja_JP.UTF-8
+ENV LANG ja_JP.UTF-8
+ENV LC_CTYPE ja_JP.UTF-8
+RUN localedef -f UTF-8 -i ja_JP ja_JP.utf8
+
+# timezone設定
+ENV TZ="${base_timezone}"
+
+# npm ###################################
+RUN npm install -g typescript
+
+# ポート解放
+EXPOSE 1337
