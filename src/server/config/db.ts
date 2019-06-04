@@ -5,8 +5,8 @@ export default {
     username: 'user',
     password: 'password',
     database: 'database',
-    host: '127.0.0.1',
-    port: 13306,
+    host: 'mysql',
+    port: 3306,
     dialect: 'mysql',
     timezone: '+09:00'
   },
